@@ -1,3 +1,4 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,27 +6,29 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 main {
@@ -35,29 +38,58 @@ main {
     align-items: center;
 }
 
-.content {
+.hero {
     text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
 }
 
-.content h2 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
+.hero h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #ffd700;
+    font-weight: 700;
+}
+
+.cta-button {
+    background-color: #ffd700;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffcd00;
 }
 
 footer {
-    background-color: #007bff;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
-    margin: 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+footer p span {
+    color: #ffd700;
 }
